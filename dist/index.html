@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Generator - Digiteal</title>
+  <link rel="icon" type="image/png" href="https://web-test.digiteal.eu/assets/images/digiteal_favicon.png">
+  <script type="module" crossorigin src="./assets/index-CQGHAd0i.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-C-guXACO.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <div class="header-content">
+        <div class="header-text">
+          <h1>QR Code Generator</h1>
+          <p>Generate payment QR codes for Digiteal</p>
+        </div>
+        <div class="header-controls">
+          <div class="collapsible-section">
+            <button class="collapsible-toggle" id="creds-toggle">
+              <span>API Credentials</span>
+              <span class="toggle-icon">▼</span>
+            </button>
+            <div class="collapsible-content" id="creds-content">
+              <div class="credentials-form">
+                <input type="text" id="username" placeholder="Username" class="cred-input" />
+                <input type="password" id="password" placeholder="Password" class="cred-input" />
+                <small>Required for shortLink API</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="collapsible-section">
+            <button class="collapsible-toggle" id="env-toggle">
+              <span>Environment</span>
+              <span class="toggle-icon">▼</span>
+            </button>
+            <div class="collapsible-content" id="env-content">
+              <div class="environment-form">
+                <select id="env-select" class="env-selector">
+                  <option value="test">Test</option>
+                  <option value="production">Production</option>
+                </select>
+                <div class="env-url" id="env-url">https://test.digiteal.eu</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="wizard-container"></main>
+  </div>
+</body>
+</html>
